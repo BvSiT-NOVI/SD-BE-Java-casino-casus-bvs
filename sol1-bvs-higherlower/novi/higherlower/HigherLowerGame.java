@@ -13,12 +13,13 @@ public class HigherLowerGame {
     public void playGame() {
         gameIsRunning = true;
         int numGamesPlayed=0;
-        // Here you should generate the number to guess
+        //Here you should generate the number to guess
+        int random  = (int)(Math.random()*100);
 
         while (gameIsRunning) {
             numGamesPlayed++;
             int input=0;
-            int random  = (int)(Math.random()*100);
+            System.out.println(random);
             System.out.println("Make a guess");
 
             //https://stackoverflow.com/questions/2496239/how-do-i-keep-a-scanner-from-throwing-exceptions-when-the-wrong-type-is-entered
